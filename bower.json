@@ -1,7 +1,7 @@
 {
   "name": "react-keypress",
   "main": "react-keypress.js",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "homepage": "https://github.com/zzarcon/react-keypress",
   "authors": [
     "zzarcon"
