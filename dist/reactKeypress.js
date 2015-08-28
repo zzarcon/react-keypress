@@ -57,17 +57,25 @@ return /******/ (function(modules) { // webpackBootstrap
 	"use strict";
 
 	var Keypress = __webpack_require__(1);
+	var elements = [];
 
 	module.exports = function (keys, handler) {
 		if (!keys || !handler) return;
 
-		//TODO: Pass Dom element
-		var listener = new Keypress.Listener();
+		return function (e) {
+			var el = e.target;
 
-		listener.register_combo({
-			"keys": keys,
-			"on_keyup": handler
-		});
+			//Check for no register the same element multiple times
+			if (elements.indexOf(el) >= 0) return;
+
+			var listener = new Keypress.Listener(el);
+
+			elements.push(el);
+			listener.register_combo({
+				"keys": keys,
+				"on_keyup": handler
+			});
+		};
 	};
 
 /***/ },
