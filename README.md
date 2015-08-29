@@ -1,4 +1,4 @@
-# React keypress [![NPM](https://img.shields.io/npm/v/react-keypress.svg)](https://www.npmjs.org/package/react-keypress)
+# React keypress [![NPM](https://img.shields.io/npm/v/react-keypress.svg)](https://www.npmjs.org/package/react-keypress) [![Bower version](https://badge.fury.io/bo/react-keypress.svg)](http://badge.fury.io/bo/react-keypress)
 
 > multi Keypress detection handlers for React.js
 
