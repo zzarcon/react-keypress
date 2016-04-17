@@ -2,7 +2,7 @@
 
 > multi Keypress detection handlers for React.js
 
-React wrapper for Keypress.js - http://dmauro.github.io/Keypress88
+React wrapper for Keypress.js - http://dmauro.github.io/Keypress
 
 Keypress is an input capture library which can be used to capture combination of keys in a simple way.
 
