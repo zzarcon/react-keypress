@@ -6,7 +6,7 @@ React wrapper for Keypress.js - http://dmauro.github.io/Keypress
 
 Keypress is an input capture library which can be used to capture combination of keys in a simple way.
 
-##Installation
+## Installation
 
 ```
 $ npm install react-keypress
@@ -17,7 +17,7 @@ $ bower install react-keypress
 ```
 
 
-##Usage 
+## Usage 
 
 Lets say that you want to fire a function when the user press `shift + enter + a`:
 
@@ -38,7 +38,7 @@ Lets say that you want to fire a function when the user press `shift + enter + a
   });
 ```
 
-##API
+## API
 
 ### Keypress(keysCombination, handler)
 
@@ -54,7 +54,7 @@ Type: `Function`
 
 This is a function that gets called everytime the keypress event for our combo is fired.
 
-###Special keys support
+### Special keys support
 
 * backspace
 * tab
@@ -80,6 +80,6 @@ This is a function that gets called everytime the keypress event for our combo i
 * delete
 * cmd
 
-##Created by
+## Created by
 
 Hector Leon Zarco Garcia - [@zzarcon](https://twitter.com/zzarcon)
