@@ -57,7 +57,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	"use strict";
 
 	var Keypress = __webpack_require__(1);
-	var elements = [];
+	var elements = new WeakMap();
 
 	module.exports = function (keys, handler) {
 		if (!keys || !handler) return;
@@ -66,11 +66,11 @@ return /******/ (function(modules) { // webpackBootstrap
 			var el = e.target;
 
 			//Check for no register the same element multiple times
-			if (elements.indexOf(el) >= 0) return;
+			if (elements.has(el)) return;
 
 			var listener = new Keypress.Listener(el);
 
-			elements.push(el);
+			elements.set(el, true);
 			listener.register_combo({
 				"keys": keys,
 				"on_keyup": handler
